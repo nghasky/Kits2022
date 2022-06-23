@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array Sort</h2>
+    <p>Sort the array in descending order:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const points = [40, 100, 1, 5, 10, 10];
+        const names = ['Ngan', 'Ha', 'Thi'];
+        const cars = [
+            { type: "Volvo", year: 2016 },
+            { type: "Aaab", year: 2001 },
+            { type: "BMW", year: 2010 }
+        ];
+        const carsSortType = [];
+        // am cho truoc, duong cho sau
+        cars.sort(function (a, b) { return b.year - a.year });
+        console.log(cars);
+        points.sort(function (a, b) { return b - a });
+        console.log(points);
+    </script>
+
+</body>
+
+</html>
